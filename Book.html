@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The Note</title>
+<link rel="stylesheet" href="Book.css">
+</head>
+<body>
+ <header class="navbar">
+        <img src="images/logo.jpg.jpeg" alt="Logo" class="logo">
+        <nav class="menu">
+         <input type="text" value="" placeholder="&#128269; Search" class="search">
+        <a href="Book.html" class="nav-link">Home</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="bsc.html" class="nav-link">BSC C.S.</a>
+        <a href="#" class="nav-link">E-Books</a>
+        <a href="#" class="nav-link">Others</a>
+            
+        </nav>
+    </header>
+    <div class="tag">
+    <h1>Semester 5</h1>
+   </div>
+<div class="link">
+<a href="pdf/AI.pdf">
+    <img src="images/AI.PNG" alt="AI Image" class="resized-image" />
+</a>
+
+
+<a href="pdf/project management.pdf">
+    <img src="images/project.jpg" alt="project Image" class="resized-image"/>
+</a>
+
+
+<a href="pdf/cyberforensic.pdf">
+    <img src="images/cyberforensic.jpg" alt="cyberforensic Image" class="resized-image" />
+</a>
+<a href="pdf/sqat.pdf">
+    <img src="images/sofwaretesting.jpg" alt="sofwaretesting Image" class="resized-image"  />
+</a>
+<a href="pdf/security.pdf" target="_blank">
+    <img src="images/security.jpg" alt="security Image" class="resized-image"/>
+</a>
+<div class="tager">
+    <h1>Semester 6</h1>
+   </div>
+<a href="pdf/cloud.pdf">
+    <img src="images/cloud.jpg" alt="cloud Image" class="resized-image"/>
+</a>
+<a href="pdf/data science.pdf">
+    <img src="images/data science.jpg" alt="data science Image" class="resized-image"/>
+</a>
+<a href="pdf/crm.pdf">
+    <img src="images/crm.jpg" alt="crm Image" class="resized-image"/>
+</a>
+<a href="pdf/ethicalhack.pdf">
+    <img src="images/ethicalhack.jpg" alt="ethicalhack Image" class="resized-image"/>
+</a>
+<a href="pdf/information-retrieval.pdf">
+    <img src="images/retrieval.jpg" alt="sofwaretesting Image" class="resized-image"/>
+</a>
+</div>
+<br>
+<footer>
+        <p>&copy; 2024 The Notes.</p>
+    </footer>
+    <script>
+  window.onload = function() {
+    const currentPage = window.location.pathname.split('/').pop(); // Get the current page name
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active-link'); // Add active class to current link
+      }
+    });
+  }
+</script>
+    
+
+</body>
+</html>

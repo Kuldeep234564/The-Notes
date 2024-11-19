@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1 class="company-name">THE NOTES</h1>
+        </header>
+        <div class="login-form">
+            <div class="logo">
+                <img src="images/logo.jpg.jpeg" alt="Logo">
+            </div>
+            <form action="LoginServlet" method="post">
+                <div class="input-group">
+                    <strong><label for="email">Email</label></strong>
+                    <input type="email" id="email" name="email"  required>
+                </div>
+                <div class="input-group">
+                    <strong><label for="password">Password</label></strong>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" value="Get Started" class="btn-primary"><strong>Get Started</strong></button>
+            </form>
+            <div class="additional-links">
+                <form action="register.jsp" method="get">
+                <a href="register.html"><strong>Create Account</strong></a>
+                
+                <a href="#"><strong>Need Help?</strong></a>
+                </form>
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>

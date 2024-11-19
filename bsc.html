@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BSC CS</title>
+<style>
+body{
+	background-color:rgb(64, 128, 128);
+}
+.navbar {
+    background-color: floralwhite;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #444;
+    box-shadow:0px 0px 15px brown;
+}
+.logo{
+	height:30px;
+	border:2px solid black;
+	width:50px;
+	box-shadow:0px 0px 15px black;
+	
+}
+.menu a{
+	margin-right:30px;
+	text-decoration:none;
+	font-weight:bold;
+	
+	
+}
+.search{
+	margin-right:30px;
+	width:500px;
+	height:30px;
+	border-radius:15px;
+	border:1px solid black;
+	box-shadow: 0px 0px 15px white;
+	
+}
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background: rgb(64, 128, 128);
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.nav-link {
+  color: purple;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Style for active link */
+.nav-link.active-link {
+  color: red; /* Active page link color */
+  font-weight: bold;
+}
+
+/* Optional: Hover effect for links */
+.nav-link:hover {
+  color: darkblue; /* Change color on hover */
+}
+
+</style>
+</head>
+<body>
+<header class="navbar">
+        <img src="images/logo.jpg.jpeg" alt="Logo" class="logo">
+        <nav class="menu">
+         <input type="text" value="" placeholder="&#128269; Search" class="search">
+            <a href="Book.html" class="nav-link">Home</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="bsc.html" class="nav-link">BSC C.S.</a>
+        <a href="#" class="nav-link">E-Books</a>
+        <a href="#" class="nav-link">Others</a>
+        </nav>
+    </header>
+     <header>
+        <h1>Bachelor of Science in Computer Science (BSc CS)</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#why-bsc">Why BSc CS?</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#important">Important Topics</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="why-bsc">
+            <h2>Why Pursue a BSc in Computer Science?</h2>
+            <p>The demand for computer science professionals continues to grow across various industries. A BSc in Computer Science equips you with the foundational knowledge and skills necessary to thrive in this dynamic field.</p>
+        </section>
+        <section id="benefits">
+            <h2>Benefits of BSc CS</h2>
+            <ul>
+                <li><strong>Career Opportunities:</strong> Opens doors to diverse careers in tech.</li>
+                <li><strong>Skill Development:</strong> Gain programming, problem-solving, and analytical skills.</li>
+                <li><strong>High Earning Potential:</strong> Competitive salaries in technology roles.</li>
+                <li><strong>Innovation:</strong> Be part of groundbreaking advancements in technology.</li>
+                <li><strong>Global Impact:</strong> Work on projects that can change lives and communities.</li>
+            </ul>
+        </section>
+        <section id="important">
+            <h2>Important Topics Covered</h2>
+            <ul>
+                <li>Programming Languages (Python, Java, C++)</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+                <li>Database Management Systems</li>
+                <li>Software Engineering Principles</li>
+                <li>Machine Learning and AI Basics</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 BSc Computer Science Guide. All rights reserved.</p>
+    </footer>
+    <script>
+  window.onload = function() {
+    const currentPage = window.location.pathname.split('/').pop(); // Get the current page name
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active-link'); // Add active class to current link
+      }
+    });
+  }
+</script>
+</body>
+</html>

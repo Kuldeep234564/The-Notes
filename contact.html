@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>contact</title>
+<style>
+body{
+	background-color:rgb(64, 128, 128);
+}
+.navbar {
+    background-color: floralwhite;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #444;
+    box-shadow:0px 0px 15px brown;
+}
+.logo{
+	height:30px;
+	border:2px solid black;
+	width:50px;
+	box-shadow:0px 0px 15px black;
+	
+}
+.menu a{
+	margin-right:30px;
+	text-decoration:none;
+	font-weight:bold;
+	
+	
+}
+.search{
+	margin-right:30px;
+	width:500px;
+	height:30px;
+	border-radius:15px;
+	border:1px solid black;
+	box-shadow: 0px 0px 15px white;
+	
+}
+.contact h3,h1{
+color:white;
+}
+.nav-link {
+  color: purple;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Style for active link */
+.nav-link.active-link {
+  color: red; /* Active page link color */
+  font-weight: bold;
+}
+
+/* Optional: Hover effect for links */
+.nav-link:hover {
+  color: darkblue; /* Change color on hover */
+}
+
+</style>
+</head>
+<body>
+<header class="navbar">
+        <img src="images/logo.jpg.jpeg" alt="Logo" class="logo">
+        <nav class="menu">
+         <input type="text" value="" placeholder="&#128269; Search" class="search">
+            <a href="Book.html" class="nav-link">Home</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="bsc.html" class="nav-link">BSC C.S.</a>
+        <a href="#" class="nav-link">E-Books</a>
+        <a href="#" class="nav-link">Others</a>
+            
+        </nav>
+    </header>
+    <div class="contact">
+    <h1>Contact</h1>
+    <h3>Kuldeep Vishwakarma<br>6307293236<br>kuldeep7458vish@gmail</h3>
+    
+    <h3>Rajan Vishwakarma<br>7666047450<br>Email: rajanc89@gmail.com</h3>
+    
+    </div>
+    <script>
+  window.onload = function() {
+    const currentPage = window.location.pathname.split('/').pop(); // Get the current page name
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active-link'); // Add active class to current link
+      }
+    });
+  }
+</script>
+</body>
+</html>
